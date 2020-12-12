@@ -16,4 +16,3 @@ def search(search_keyword, API_KEY):
             print()
     except:
         print("Invalid request")
-
