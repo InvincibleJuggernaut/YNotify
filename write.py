@@ -1,3 +1,4 @@
+#Script to write the details onto the text file
 filename='record.txt'
 
 def store(title, description, channel_id):
@@ -6,3 +7,4 @@ def store(title, description, channel_id):
         file.write(description+"\n")
         file.write(channel_id+"\n\n")
         file.write("-X-X-X-X-\n\n")
+
