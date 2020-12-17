@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Parallelism by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Feed</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+	{% block content %}
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Items -->
+							<div class="items">
+
+								<div class="item intro span-2">
+									<h1>FEED</h1>
+									<p>A glimpse of the past week</p>
+									
+								</div>
+								{% for i in range(m) %}
+								<article class="item thumb span-2">
+									<h2><a href={{ url[i] }}>{{ titles[i] }}</a></h2>
+									<a href={{ thumbnails[i] }} class="image"><img src={{ thumbnails[i] }} alt=""></a>
+								</article>
+								{% endfor %}
+								</div>
+
+						<!-- Items -->
+							<div class="items">
+							{% for i in range(m,n) %}
+								<article class="item thumb span-2">
+									<h2><a href={{ url[i] }}>{{ titles[i] }}</a></h2>
+									<a href={{ thumbnails[i] }} class="image"><img src={{ thumbnails[i] }} alt=""></a>
+								</article>
+								{% endfor %}
+
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<section>
+							<p>This site is using <strong>Parallelism</strong>, a responsive portfolio site template by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the <a href="http://html5up.net/license">Creative Commons Attribution</a> license.</p>
+						</section>
+						<section>
+							<ul class="copyright">
+							</ul>
+						</section>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.poptrox.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+	
+	{% endblock %}
+	</body>
+</html>
