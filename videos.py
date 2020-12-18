@@ -34,7 +34,7 @@ def videos(list_of_id, API_KEY):
                     list_of_video_id.append(x['id']['videoId'])
                     list_of_thumbnails.append(x['snippet']['thumbnails']['high']['url'])
                     list_of_published_at.append(x['snippet']['publishedAt'])
-                    list_of_url.append('https://www.youtube.com/watch?v='+x['id']['videoId'])
+                    list_of_url.append('https://invidious.snopyta.org/watch?v='+x['id']['videoId'])
                 
                 '''
                 print(x['snippet']['title'])
