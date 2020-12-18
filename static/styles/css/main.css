@@ -832,9 +832,10 @@ body.is-preload #main .item.thumb img {
   background: rgba(18, 21, 29, 0.85);
   display: block;
   width: 100%;
-  line-height: 75px;
+  line-height: 16px;
+  padding: 0px 0px 5px 0px;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1em;
   color: #fff;
 }
 
