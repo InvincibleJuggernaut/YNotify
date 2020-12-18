@@ -1,0 +1,2 @@
+#This is a text file which will store the channel names along with their description and channel IDs.
+#Delete all these comments before running 'search.py'
